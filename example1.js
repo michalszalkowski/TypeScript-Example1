@@ -1,0 +1,24 @@
+var isWinter = false;
+var count = 5;
+var text = "michal";
+var names = ["Michał", "Marta"];
+var numbers = [1, 2, 3, 4, 5];
+var other = [1, true, "michal"];
+var SomeTypes;
+(function (SomeTypes) {
+    SomeTypes[SomeTypes["TypeA"] = 0] = "TypeA";
+    SomeTypes[SomeTypes["TypeB"] = 1] = "TypeB";
+    SomeTypes[SomeTypes["TypeC"] = 2] = "TypeC";
+})(SomeTypes || (SomeTypes = {}));
+var type1 = SomeTypes.TypeA;
+var type2 = SomeTypes.TypeB;
+var type3 = SomeTypes.TypeC;
+console.log(1, isWinter);
+console.log(2, count);
+console.log(3, text);
+console.log(4, names);
+console.log(5, numbers);
+console.log(6, other);
+console.log(7, type1);
+console.log(8, type2);
+console.log(9, type3);
